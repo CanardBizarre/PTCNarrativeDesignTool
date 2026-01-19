@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,32 +12,27 @@ namespace PTCNarrativeDesignTool
 {
     public class Character
     {
-        int id = -1;
-        string name = "Name of the character";
-        string portraitPath = "Insert the portrait file name here";
-        Dictionary<int, Dialogue> characterDialogue =  new Dictionary<int, Dialogue>();
-
-        public int ID => id;
-        public string Name => name;
+        public int ID { get; set; } = -1;
+        public string Name { get; set; } = "Name of the character";
+        public string PortraitPath { get; set; } = "Insert the portrait file name here";
+        public Dictionary<int, Dialogue> CharacterDialogues { get; set; } = new Dictionary<int, Dialogue>();
         public string FirstName
         {
             get
             {
                 string _motif = @"^[a-zA-Z]+";
-                Match _match = Regex.Match(name, _motif);
-                return $"{_match}_Portrait";
+                Match _match = Regex.Match(Name, _motif);
+                return $"{_match}";
                 
             }
         }
-        public string Portrait => portraitPath;
-        public Dictionary<int, Dialogue> CharacterDialogue => characterDialogue;
-        public int LastDialogueID 
+        public int LastDialogueID
         {
             get
             {
-                characterDialogue.OrderBy(p => p.Key);
-                if (characterDialogue.Count() == 0) return 0;
-                return characterDialogue.Last().Key; 
+                CharacterDialogues.OrderBy(p => p.Key);
+                if (CharacterDialogues.Count() == 0) return 0;
+                return CharacterDialogues.Last().Key;
             }
                 
         }
@@ -47,19 +43,19 @@ namespace PTCNarrativeDesignTool
         }
         public Character(int _id, string _name)
         {
-            id = _id;
-            name = _name;
+            ID = _id;
+            Name = _name;
 
             string _motif = @"^[a-zA-Z]+";
             Match _match = Regex.Match(_name, _motif);
-            portraitPath = $"{_match}_Portrait";
+            PortraitPath = $"{_match}_Portrait";
         }
         public Character(int _id, string _name, string _portraitPath, Dictionary<int, Dialogue> _characterDialogue)
         {
-            id = _id;
-            name = _name;
-            portraitPath = _portraitPath;
-            characterDialogue = _characterDialogue;
+            ID = _id;
+            Name = _name;
+            PortraitPath = _portraitPath;
+            CharacterDialogues = _characterDialogue;
         }
 
         public void AddNewDialog(Dialogue _newDialogue)
@@ -67,22 +63,22 @@ namespace PTCNarrativeDesignTool
             int _index = LastDialogueID + 1;
 
             _newDialogue.LastId = _index;
-            characterDialogue.Add(_index, _newDialogue);
+            CharacterDialogues.Add(_index, _newDialogue);
         }
 
         public void RemoveDialogue(int _index)
         {
-            if (characterDialogue.ContainsKey(_index)) return;
-            characterDialogue.Remove(_index);
+            if (CharacterDialogues.ContainsKey(_index)) return;
+            CharacterDialogues.Remove(_index);
         }
 
         public override string ToString()
         {
-            string _toString = $"Character ID :{id}\n" +
-                               $"Character Name : {name}\n" +
-                               $"portraitPath : {portraitPath}\n";
+            string _toString = $"Character ID :{ID}\n" +
+                               $"Character Name : {Name}\n" +
+                               $"portraitPath : {PortraitPath}\n";
 
-            foreach (KeyValuePair<int, Dialogue> _pair in characterDialogue)
+            foreach (KeyValuePair<int, Dialogue> _pair in CharacterDialogues)
             {
                 _toString += $"\n{_pair.Value.ToString()}\n";
             }

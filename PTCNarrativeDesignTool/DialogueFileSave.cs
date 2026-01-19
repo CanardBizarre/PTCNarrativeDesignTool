@@ -17,11 +17,17 @@ namespace PTCNarrativeDesignTool
         string Folder => folder;
         public void SaveCharacter(Character _characterToSave)
         {
-            string _charJson = JsonConvert.SerializeObject(_characterToSave);
-
+            string _charJson = JsonConvert.SerializeObject(_characterToSave, Formatting.Indented);
             Directory.CreateDirectory(folder);
             string _path = Path.Combine(folder, _characterToSave.FirstName + Extension);
-            FilesSystem.WriteFile(_path, _charJson);
+
+        }
+        public Character LoadCharacter(string _characterName)
+        {
+            string _path = Path.Combine(folder, _characterName + Extension);
+            string[] _file = FilesSystem.ReadAllLines(_path);
+            string _json = string.Join(Environment.NewLine, _file);
+            return JsonConvert.DeserializeObject<Character>(_json);
         }
 
     }

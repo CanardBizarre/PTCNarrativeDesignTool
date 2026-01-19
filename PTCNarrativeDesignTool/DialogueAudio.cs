@@ -8,22 +8,16 @@ namespace PTCNarrativeDesignTool
 {
     public class DialogueAudio
     {
-
-        int id = -1;
-        string audioFilePath = "";
-        float audioLength = 0f;
-
-
-        public int ID => id;
-        public string AudioFilePath => audioFilePath;
+        public int ID { get; set; } = -1;
+        public string AudioFilePath { get; set; } = "";
         public float AudioLength { get; set; } = 0f;
 
         public DialogueAudio(){ }
 
         public DialogueAudio(int iD)
         {
-            id = iD;
-            audioFilePath = $"VO[{id}]";
+            ID = iD;
+            AudioFilePath = $"VO[{ID}]";
             // TODO Make audio thing
         }
     }

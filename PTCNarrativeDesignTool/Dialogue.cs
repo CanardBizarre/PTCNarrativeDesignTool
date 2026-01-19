@@ -8,34 +8,29 @@ namespace PTCNarrativeDesignTool
 {
     public class Dialogue
     {
-
-        int id = -1;
-        DialogueLine line = new DialogueLine();
-        DialogueAudio audio = new DialogueAudio();
-
-        public int ID => id;
+        public int ID { get; set; } = -1;
 
         // ID given by the character
         public int LastId { set; get; }
-        public DialogueLine Line =>  line;
-        public DialogueAudio Audio => audio;
+        public DialogueLine Line { get; set; } = new DialogueLine();
+        public DialogueAudio Audio { get; set; } = new DialogueAudio();
 
         public Dialogue() { }
         public Dialogue(int _id, DialogueLine _line, DialogueAudio _audio)
         {
-            id = _id;
-            line = _line;
-            audio = _audio;
+            ID = _id;
+            Line = _line;
+            Audio = _audio;
         }
 
         public override string ToString()
         {
-            return $"Dialogue ID :{id}\n" +
+            return $"Dialogue ID :{ID}\n" +
                    $"FULL_ID : {LastId}\n" +
                    $"Line : {Line.Text}\n" +
-                   $"Audio Path : {audio.AudioFilePath}\n" +
-                   $"Audio Length: {audio.AudioLength}";
-          
+                   $"Audio Path : {Audio.AudioFilePath}\n" +
+                   $"Audio Length: {Audio.AudioLength}";
+
         }
 
     }
