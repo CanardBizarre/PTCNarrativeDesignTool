@@ -33,3 +33,4 @@ D:\github\Csharp\PTCNarrativeDesignTool\PTCNarrativeDesignTool\obj\Debug\net8.0\
 D:\github\Csharp\PTCNarrativeDesignTool\PTCNarrativeDesignTool\obj\Debug\net8.0\PTCNarrativeDesignTool.pdb
 D:\github\Csharp\PTCNarrativeDesignTool\PTCNarrativeDesignTool\obj\Debug\net8.0\PTCNarrativeDesignTool.genruntimeconfig.cache
 D:\github\Csharp\PTCNarrativeDesignTool\PTCNarrativeDesignTool\obj\Debug\net8.0\ref\PTCNarrativeDesignTool.dll
+E:\Vt\Natif\C#\PTCNarrativeDesignTool\PTCNarrativeDesignTool\obj\Debug\net8.0\PTCNarrativeDesignTool.sourcelink.json

@@ -20,6 +20,7 @@ namespace PTCNarrativeDesignTool
             string _charJson = JsonConvert.SerializeObject(_characterToSave, Formatting.Indented);
             Directory.CreateDirectory(folder);
             string _path = Path.Combine(folder, _characterToSave.FirstName + Extension);
+            FilesSystem.WriteFile(_path, _charJson);
 
         }
         public Character LoadCharacter(string _characterName)

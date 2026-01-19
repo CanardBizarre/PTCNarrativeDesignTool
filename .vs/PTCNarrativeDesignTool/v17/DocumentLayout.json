@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|e:\\vt\\natif\\c#\\ptcnarrativedesigntool\\ptcnarrativedesigntool\\dialoguenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|solutionrelative:ptcnarrativedesigntool\\dialoguenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|e:\\vt\\natif\\c#\\ptcnarrativedesigntool\\ptcnarrativedesigntool\\dialogueaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|solutionrelative:ptcnarrativedesigntool\\dialogueaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|e:\\vt\\natif\\c#\\ptcnarrativedesigntool\\ptcnarrativedesigntool\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|solutionrelative:ptcnarrativedesigntool\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|e:\\vt\\natif\\c#\\ptcnarrativedesigntool\\ptcnarrativedesigntool\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|solutionrelative:ptcnarrativedesigntool\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|e:\\vt\\natif\\c#\\ptcnarrativedesigntool\\ptcnarrativedesigntool\\dialoguefilesave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|solutionrelative:ptcnarrativedesigntool\\dialoguefilesave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|e:\\vt\\natif\\c#\\ptcnarrativedesigntool\\ptcnarrativedesigntool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|solutionrelative:ptcnarrativedesigntool\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|e:\\vt\\natif\\c#\\ptcnarrativedesigntool\\ptcnarrativedesigntool\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AA138D5-1C42-417A-BD5C-E3A2753E563B}|PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj|solutionrelative:ptcnarrativedesigntool\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +38,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DialogueNode.cs",
+              "DocumentMoniker": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\DialogueNode.cs",
+              "RelativeDocumentMoniker": "PTCNarrativeDesignTool\\DialogueNode.cs",
+              "ToolTip": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\DialogueNode.cs",
+              "RelativeToolTip": "PTCNarrativeDesignTool\\DialogueNode.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T08:22:01.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dialogue.cs",
+              "DocumentMoniker": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\Dialogue.cs",
+              "RelativeDocumentMoniker": "PTCNarrativeDesignTool\\Dialogue.cs",
+              "ToolTip": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\Dialogue.cs",
+              "RelativeToolTip": "PTCNarrativeDesignTool\\Dialogue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T08:20:00.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DialogueAudio.cs",
+              "DocumentMoniker": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\DialogueAudio.cs",
+              "RelativeDocumentMoniker": "PTCNarrativeDesignTool\\DialogueAudio.cs",
+              "ToolTip": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\DialogueAudio.cs",
+              "RelativeToolTip": "PTCNarrativeDesignTool\\DialogueAudio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T08:21:55.702Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -36,46 +87,46 @@
               "RelativeDocumentMoniker": "PTCNarrativeDesignTool\\Character.cs",
               "ToolTip": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\Character.cs",
               "RelativeToolTip": "PTCNarrativeDesignTool\\Character.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwBoAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAxwBoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T14:30:12.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "DialogueFileSave.cs",
               "DocumentMoniker": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\DialogueFileSave.cs",
               "RelativeDocumentMoniker": "PTCNarrativeDesignTool\\DialogueFileSave.cs",
               "ToolTip": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\DialogueFileSave.cs",
               "RelativeToolTip": "PTCNarrativeDesignTool\\DialogueFileSave.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T14:27:47.679Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FilesSystem.cs",
               "DocumentMoniker": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\FilesSystem.cs",
               "RelativeDocumentMoniker": "PTCNarrativeDesignTool\\FilesSystem.cs",
               "ToolTip": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\FilesSystem.cs",
               "RelativeToolTip": "PTCNarrativeDesignTool\\FilesSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwDsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T13:52:41.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\Program.cs",
               "RelativeDocumentMoniker": "PTCNarrativeDesignTool\\Program.cs",
               "ToolTip": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\Program.cs",
               "RelativeToolTip": "PTCNarrativeDesignTool\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T15:02:54.653Z",
               "EditorCaption": ""

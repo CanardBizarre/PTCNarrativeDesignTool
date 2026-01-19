@@ -15,9 +15,10 @@ DialogueManager.GetInstance().CreateDialogue(_secondCharacter, "Cool motive, sti
 //Console.WriteLine("\n\n" + _secondCharacter.ToString());
 
 DialogueFileSave _saver = new DialogueFileSave();
+_saver.SaveCharacter(_secondCharacter);
 
 Character _firstCharacter = _saver.LoadCharacter("kim");
+Character _thirdCharecter = _saver.LoadCharacter("jake");
 
 Console.WriteLine(_firstCharacter.ToString());
-
-//_saver.SaveCharacter(_firstCharacter);
+Console.WriteLine(_thirdCharecter.ToString());

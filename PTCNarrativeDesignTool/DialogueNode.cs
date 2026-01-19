@@ -9,20 +9,11 @@ namespace PTCNarrativeDesignTool
 
     public enum ConnectionType
     {
+        CT_None,
         CT_Unique,
         CT_Positive,
-        CT_Negatif
-    }
-    public struct FChildNodeData
-    {
-        public DialogueNode child = new DialogueNode();
-        public ConnectionType connectionType = ConnectionType.CT_Unique;
-        public FChildNodeData() { }
-        public FChildNodeData(DialogueNode _child, ConnectionType _type)
-        {
-            child = _child;
-            connectionType = _type;
-        }
+        CT_Negatif,
+        CT_Count
     }
 
     /// <summary>
@@ -30,12 +21,16 @@ namespace PTCNarrativeDesignTool
     /// </summary>
     public class DialogueNode
     {
-        Character character = new Character();
-        Dialogue dialogue = new Dialogue();
 
+
+        Dialogue dialogue = new Dialogue();
         DialogueNode parent = new DialogueNode();
-        List<FChildNodeData> children = new List<FChildNodeData>();
-        
+        List<DialogueNode> children = new List<DialogueNode>();
+
+        public Character Character { get; set; } = new Character();
+        public int DialogueID { get; set; } = -1;
+        public ConnectionType ConnectionType { get; set; }
+
 
 
 
