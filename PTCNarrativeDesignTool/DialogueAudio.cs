@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PTCNarrativeDesignTool
+﻿namespace PTCNarrativeDesignTool
 {
     public class DialogueAudio
     {
@@ -12,7 +6,7 @@ namespace PTCNarrativeDesignTool
         public string AudioFilePath { get; set; } = "";
         public float AudioLength { get; set; } = 0f;
 
-        public DialogueAudio(){ }
+        public DialogueAudio() { }
 
         public DialogueAudio(int iD)
         {

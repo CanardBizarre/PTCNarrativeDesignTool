@@ -1,19 +1,12 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using System.Text.RegularExpressions;
 
 namespace PTCNarrativeDesignTool
 {
     public class Character
     {
         public int ID { get; set; } = -1;
-        public string Name { get; set; } = "Name of the character";
+        public string Name { get; set; } = "Name of the characters";
+        public string FormattedName => Name.Replace(" ", "_");
         public string PortraitPath { get; set; } = "Insert the portrait file name here";
         public Dictionary<int, Dialogue> CharacterDialogues { get; set; } = new Dictionary<int, Dialogue>();
         public string FirstName
@@ -23,23 +16,23 @@ namespace PTCNarrativeDesignTool
                 string _motif = @"^[a-zA-Z]+";
                 Match _match = Regex.Match(Name, _motif);
                 return $"{_match}";
-                
+
             }
         }
         public int LastDialogueID
         {
             get
             {
-                CharacterDialogues.OrderBy(p => p.Key);
+                CharacterDialogues = CharacterDialogues.OrderBy(p => p.Key).ToDictionary();
                 if (CharacterDialogues.Count() == 0) return 0;
                 return CharacterDialogues.Last().Key;
             }
-                
+
         }
 
         public Character()
         {
-       
+
         }
         public Character(int _id, string _name)
         {
@@ -65,13 +58,11 @@ namespace PTCNarrativeDesignTool
             _newDialogue.LastId = _index;
             CharacterDialogues.Add(_index, _newDialogue);
         }
-
         public void RemoveDialogue(int _index)
         {
             if (CharacterDialogues.ContainsKey(_index)) return;
             CharacterDialogues.Remove(_index);
         }
-
         public override string ToString()
         {
             string _toString = $"Character ID :{ID}\n" +
@@ -86,5 +77,9 @@ namespace PTCNarrativeDesignTool
         }
 
 
+        public static string GetFormatedName(string _name)
+        {
+            return Regex.Replace(_name, @"\s+", "_");
+        }
     }
 }

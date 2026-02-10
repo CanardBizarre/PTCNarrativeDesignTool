@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj": {}
+    "E:\\Vt\\Github\\Unity\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj": {}
   },
   "projects": {
-    "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj": {
+    "E:\\Vt\\Github\\Unity\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj",
+        "projectUniqueName": "E:\\Vt\\Github\\Unity\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj",
         "projectName": "PTCNarrativeDesignTool",
-        "projectPath": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj",
-        "packagesPath": "C:\\Users\\HUYN2303\\.nuget\\packages\\",
-        "outputPath": "E:\\Vt\\Natif\\C#\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\obj\\",
+        "projectPath": "E:\\Vt\\Github\\Unity\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool.csproj",
+        "packagesPath": "C:\\Users\\soft\\.nuget\\packages\\",
+        "outputPath": "E:\\Vt\\Github\\Unity\\PTCNarrativeDesignTool\\PTCNarrativeDesignTool\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HUYN2303\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\soft\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

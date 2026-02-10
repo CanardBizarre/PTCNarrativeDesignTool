@@ -8,39 +8,53 @@ using System.Threading.Tasks;
 namespace PTCNarrativeDesignTool
 {
 
-    internal sealed class CharacterManager
+    public class CharacterManager: Singleton<CharacterManager>
     {
-
-        private static CharacterManager instance;
-        public static CharacterManager GetInstance()
-        {
-            if (instance == null)
-            {
-                instance = new CharacterManager();
-            }
-            return instance;
-        }
-
-
-        public int CHARACTER_INDEX = -1;
-        public Dictionary<int, Character> character = new Dictionary<int, Character>();
+        public Dictionary<int, Character> characters = new Dictionary<int, Character>();
+        public Dictionary<string, Character> charactersByName = new Dictionary<string, Character>();
+        int characterIndex = -1;
 
         public int LastCharacterID
         {
             get
             {
-                if (character.Count() == 0) return 0;
-                character.OrderBy(p => p.Key);
-                return character.Last().Key;
+                if (characters.Count() == 0) return characterIndex = 0;
+                return characterIndex = characters.Last().Value.ID;
             }
 
         }
-
-        public Character CreateChracter(string _name)
+        public  int CharacterIndex => characterIndex;
+        public void Init(Dictionary<int, Character> _characters)
         {
-            Character _newCharacter = new Character(LastCharacterID + 1, _name);
-            character.Add(LastCharacterID + 1, _newCharacter);
+            characters = _characters;
+            characters = characters.OrderBy(p => p.Value.ID).ToDictionary();
+            foreach (var _character in characters)
+            {
+                charactersByName.Add(_character.Value.FormattedName, _character.Value);
+            }
+        }
+        public Character CreateCharacter(string _name)
+        {
+            string _formatedName = Character.GetFormatedName(_name);
+            if (charactersByName.ContainsKey(_formatedName)) return charactersByName[_formatedName];
+            // Recursive With To Add Number of same character 
+
+            characterIndex = LastCharacterID == 0  && characters.Count() == 0 ? 0 : characterIndex + 1;
+            Character _newCharacter = new Character(characterIndex, _name);
+            characters.Add(characterIndex, _newCharacter);
             return _newCharacter;
+        }
+
+        public override string ToString()
+        {
+            characters = characters.OrderBy(p => p.Value.ID).ToDictionary();
+            string _toString = string.Empty;
+            if (characters.Count() < 1) return _toString;
+            foreach (KeyValuePair<int, Character> _pair in characters)
+            {
+                _toString += $"{_pair.Key} - {_pair.Value.Name}\n";
+            }
+            return _toString;
         }
     }
 }

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PTCNarrativeDesignTool
+﻿namespace PTCNarrativeDesignTool
 {
     public class Dialogue
     {
         public int ID { get; set; } = -1;
 
-        // ID given by the character
+        // ID given by the characters
         public int LastId { set; get; }
         public DialogueLine Line { get; set; } = new DialogueLine();
         public DialogueAudio Audio { get; set; } = new DialogueAudio();

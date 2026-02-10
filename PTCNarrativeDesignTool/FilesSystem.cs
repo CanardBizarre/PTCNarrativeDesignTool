@@ -1,29 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PTCNarrativeDesignTool
+﻿namespace PTCNarrativeDesignTool
 {
     internal static class FilesSystem
     {
         public static bool IsDirectory(string _path)
         {
-			try
-			{
+            try
+            {
                 if (!File.Exists(_path))
                     throw new FileNotFoundException();
-			}
-			catch (FileNotFoundException _exeption)
-			{
+            }
+            catch (FileNotFoundException _exeption)
+            {
                 Console.WriteLine($"{_path} does not exist");
-			}
+            }
 
             return true;
         }
 
-        public static bool WriteFile(string _path , string _content)
+        public static bool WriteFile(string _path, string _content)
         {
             if (!IsDirectory(_path))
             {
