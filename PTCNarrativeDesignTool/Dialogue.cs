@@ -1,11 +1,15 @@
 ﻿namespace PTCNarrativeDesignTool
 {
+ 
+
     public class Dialogue
     {
+        // ID To Get That will get the other
         public int ID { get; set; } = -1;
 
         // ID given by the characters
-        public int LastId { set; get; }
+        public int LastId { get; set; }
+
         public DialogueLine Line { get; set; } = new DialogueLine();
         public DialogueAudio Audio { get; set; } = new DialogueAudio();
 

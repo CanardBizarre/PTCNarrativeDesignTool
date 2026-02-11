@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PTCNarrativeDesignTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4718ff3fd2ec38d67cdee7d4b62dc0601bcf0b7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd70e93beffc8ba9e5377940d0dbc740d5f960cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("PTCNarrativeDesignTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PTCNarrativeDesignTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
